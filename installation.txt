@@ -1,0 +1,13 @@
+> mkdir myproject
+> cd myproject
+> python -m venv venv
+> venv\Scripts\activate
+> pip install Flask
+
+> set FLASK_APP=app.py
+> set FLASK_ENV=development 
+
+server run: 
+
+
+> flask run
