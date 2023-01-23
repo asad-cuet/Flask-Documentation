@@ -1,13 +1,13 @@
-> mkdir myproject
-> cd myproject
-> python -m venv venv
-> venv\Scripts\activate
-> pip install Flask
+One time:
+                                    > pip install virtualenv
+                                    > mkdir projectfolder
+                                    > cd projectfolder
+Creating virtual environment:       > python -m venv <venvname>
+Activating environment              > <venvname>\Scripts\activate
+installing in this environment:     > pip install Flask
 
-> set FLASK_APP=app.py
-> set FLASK_ENV=development 
+                                    > set FLASK_APP=app.py
+                                    > set FLASK_ENV=development 
 
-server run: 
-
-
-> flask run
+                     
+server run:                         > flask run

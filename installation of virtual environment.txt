@@ -1,0 +1,10 @@
+1. to install virtualenv on Windows: pip install virtualenv
+
+2.Create a project: mkdir <project name>
+
+3.cd <project name>
+
+4.Create an Environment: python -m venv <name of environment>
+
+
+5.Activate env: <name of environment>\Scripts\activate
