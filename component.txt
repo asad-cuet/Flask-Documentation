@@ -1,0 +1,38 @@
+1. static file:
+==============
+url_for('static', filename='style.css')
+
+
+2.render template:
+===================
+from flask import render_template
+	return render_template('hello.html', name=name)
+
+2.render template with values:
+==============================
+	return render_template("about.html", sites=sites)
+
+3.Template:
+==========
+<!doctype html>
+<title>Hello from Flask</title>
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+{% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+
+3.include in blade:
+===================
+{% include 'footer.html' %}
+
+4.Redirect:
+===========
+from flask import redirect, url_for
+return redirect(url_for('login'))
+
+5.error handler:
+=================
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('page_not_found.html'), 404

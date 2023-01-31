@@ -1,0 +1,27 @@
+1. run in project path cmd:
+
+   > pip3 install gunicorn
+
+   > pip3 freeze > requirements.txt
+
+   > npm install touch-cli -g
+
+   > touch Procfile
+
+2. In Procfile:
+
+   > web: gunicorn app:app
+
+3. Create git repository and push the project
+
+4. run in project path cmd:
+
+   > heroku login
+
+   > heroku create project-name
+
+   > git push heroku main   # main is your repository branch name
+
+   > heroku open
+
+***Done***

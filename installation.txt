@@ -1,13 +1,31 @@
-One time:
-                                    > pip install virtualenv
+installing virtual environment      > pip install virtualenv   [ One time]
                                     > mkdir projectfolder
                                     > cd projectfolder
 Creating virtual environment:       > python -m venv <venvname>
 Activating environment              > <venvname>\Scripts\activate
-installing in this environment:     > pip install Flask
+installing in this environment:     > pip install Flask             
+
+
+Make a file in the Flask 
+project folder called app.py
+with following code:
+
+                                    from flask import Flask
+                                    app = Flask(__name__)
+                                    @app.route('/')
+                                    def hello_world():
+                                        return 'Hello world!'
+
 
                                     > set FLASK_APP=app.py
                                     > set FLASK_ENV=development 
 
+
+
                      
-server run:                         > flask run
+server run:                         > flask run  Or,  flask --debug run
+
+
+Note: Necessary module need to install. Exp: 
+                                    > pip install pandas
+                                    > pip install flask-cors  [for api access]
